@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Eventually would break this into smaller, more modular stylesheets instead of this one monster file. */
+/* Eventually would break this into more modular stylesheets instead of this one monster file. */
 
 :root {
     --light-blue: #58a4f9;
@@ -388,13 +388,13 @@ section {
 
 .team {
     background: linear-gradient(white, #1e3a56);
-    display: flex;
     text-align: center;
     width: 100%;
+    z-index: 1;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: space-between;
-    z-index: 1;
 }
 
 .team-member {
@@ -427,8 +427,7 @@ section {
 
 #cta {
     margin: 4em auto;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 
 #cta h2 {
@@ -439,17 +438,17 @@ section {
 
 .cta-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: center;
     align-items: space-between;
-
+    flex-direction: row;
+    width: 100%;
+    /* box-sizing: none; */
 }
 
 .cta-block {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     background-color: var(--blue);
     width: 25%;
     height: auto;
@@ -598,6 +597,10 @@ textarea {
 
     .checker-item {
         width: 100%;
+    }
+
+    .cta-block {
+        width: 50%;
     }
 }
 
