@@ -258,7 +258,7 @@ button.btn-blue {
     background-color: var(--blue);
 }
 
-button.btn-orange {
+.btn-orange {
     background: var(--dark-orange);
     border: none;
     padding: 0px !important;
@@ -266,6 +266,7 @@ button.btn-orange {
     height: 50px;
     width: 160px;
     color: white;
+    text-align: center;
 }
 
 .btn-orange:hover {
@@ -411,6 +412,8 @@ section {
 
 #cta {
     margin: 4em auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #cta h2 {
@@ -421,14 +424,17 @@ section {
 
 .cta-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: space-between;
 
 }
 
 .cta-block {
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--blue);
     width: 25%;
     height: auto;
@@ -464,28 +470,48 @@ section {
 
 /* Fotter */
 
-.footer-container {
+footer{
     background-color: var(--blue);
+
+}
+.footer-container {
+    width: 50%;
     color: white;
-    margin-bottom: 20%;
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    margin: auto 25% 10% 25%;
 }
 
 .footer-element {
-    margin: 50%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
 
-
+.name-boxes {
+    display: flex;
+    justify-content: space-between;   
+    flex-wrap: wrap; 
 }
 
 #fe-1 {
-    width: 30%;
+    width: 40%;
+    margin: 12% 5%;
+    font-size: 1.15em;
+    line-height: 1.25em;
 }
 
 #fe-2 {
     width: 50%;
 }
+
+#fe-2 h2, #fe-2 input[type=submit] {
+    justify-content: center;
+    text-align: center;
+}
+
+
+
 
 .footer-element input[type=text],
 textarea {
