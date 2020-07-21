@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8";  /* Eventually plan to break into more modular stylesheets instead of this singular monster. */
 
 :root {
     --light-blue: #58a4f9;
@@ -196,8 +196,7 @@ header.masthead h1 p button {
 }
 
 
-
-
+/* Main Body */
 
 .accent-color {
     color: var(--accent-color);
