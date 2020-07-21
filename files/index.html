@@ -31,9 +31,9 @@
             </div>
         </div>
 
-        <nav class="navbar">
-            <a href="#main-blq">Menu 1</a>
-            <a href="#checkers">Menu 2</a>
+        <nav class="navbar" id="myNavBar">
+            <a class="navbar" href="#main-blq">Menu 1</a>
+            <a class="navbar"href="#checkers">Menu 2</a>
             <div class="dropdown">
                 <button class="dropbtn">Menu 3
                     <i class="fas fa-caret-down"></i>
@@ -44,15 +44,16 @@
                     <a href="#">Item C</a>
                 </div>
             </div>
-            <a href="#team">Menu 4</a>
-            <a href="#cta">Menu 5</a>
-            <a href="#contact">Menu 6</a>
-            <a href="#menu7">Menu 7</a>
-            <a href="#menu8">Menu 8</a>
-            <div>
+            <a class="navbar" href="#team">Menu 4</a>
+            <a class="navbar" href="#cta">Menu 5</a>
+            <a class="navbar" href="#contact">Menu 6</a>
+            <a class="navbar" href="#menu7">Menu 7</a>
+            <a class="navbar" href="#menu8">Menu 8</a>
+            
+            <div class="navbar">
                 <input type="text" placeholder="Search...">
             </div>
-
+            <a href="javascript:void(0);" class="icon" onclick="myNavBarFunction()">&#9776;</a>
         </nav>
 
         <!--Masthead-->
@@ -245,8 +246,9 @@
         </div>
     </footer>
 
-    <script src="js/modal.js"></script>
-
+    
 </body>
+<script src="js/nav.js"></script>
+<script src="js/modal.js"></script>
 
 </html>
