@@ -195,36 +195,8 @@ header.masthead h1 p button {
     text-align: center;
 }
 
-@media (min-width: 992px) {
-    header.masthead {
-        height: 450px;
-        /* min-height: 40rem; */
-        padding-top: 4.5em;
-        padding-bottom: 0;
-    }
 
-    header.masthead p {
-        font-size: 1.15em;
-        text-align: center;
-    }
 
-    header.masthead button {
-        font-size: 1em;
-        text-align: center;
-    }
-
-    header.masthead h1 {
-        font-size: 2em;
-        text-align: center;
-    }
-}
-
-@media (min-width: 1200px) {
-    header.masthead h1 {
-        font-size: 2em;
-        text-align: center;
-    }
-}
 
 
 .accent-color {
@@ -234,7 +206,7 @@ header.masthead h1 p button {
 #main-blq {
     text-align: center;
     font-size: 1.1em;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 #main-blq blockquote {
@@ -307,12 +279,19 @@ button.btn-white {
 }
 
 .checker-container {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 }
+.checker-item{
+    width: 50%; 
+}
 
-/* .checker-item {
-} */
+
+
+
+
 
 .inset-image-right {
     float: right;
@@ -340,8 +319,9 @@ button.btn-white {
     height: 450px;
 }
 
-.text {
-    padding: 50px;
+#main-text {
+    padding: 0 50px 1.5em 50px;
+
 }
 
 .text-wrap {
@@ -536,6 +516,52 @@ textarea {
 
 
 /*  Responsive  */
+
+@media screen and (min-width: 1200px) {
+    header.masthead h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+    .container {
+        max-width: 100%;
+    }
+
+    
+}
+
+@media screen and (min-width: 992px) {
+    header.masthead {
+        height: 450px;
+        /* min-height: 40rem; */
+        padding-top: 4.5em;
+        padding-bottom: 0;
+    }
+
+    header.masthead p {
+        font-size: 1.15em;
+        text-align: center;
+    }
+
+    header.masthead button {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    header.masthead h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 992px){
+    .container {
+        max-width: 100%;
+    }
+
+    .checker-item{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     .navbar a,
@@ -558,5 +584,9 @@ textarea {
 
     .container {
         max-width: 100%;
+    }
+
+    .checker-item{
+        width: 100%;
     }
 }
