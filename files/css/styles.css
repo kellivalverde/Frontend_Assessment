@@ -282,24 +282,27 @@ button.btn-white {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 3em;
 
 }
-.checker-item{
-    width: 50%; 
+
+.checker-item {
+    width: 50%;
 }
 
+.checker-item img {
+    width: 100%;
+    max-height: 100%;
+}
 
+.checker-item h3 {
+    padding-top: 25%;
+    margin: 0 10%;
 
-
-
+}
 
 .inset-image-right {
     float: right;
-}
-
-.inset-image-right img {
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .inset-image-left {
@@ -335,6 +338,7 @@ button.btn-white {
     object-fit: none;
     object-position: 0 40%;
 }
+
 .top-right-crop {
     object-fit: none;
     object-position: 50% 50%;
@@ -457,10 +461,11 @@ section {
 
 /* Fotter */
 
-footer{
+footer {
     background-color: var(--blue);
 
 }
+
 .footer-container {
     width: 50%;
     color: white;
@@ -477,8 +482,8 @@ footer{
 
 .name-boxes {
     display: flex;
-    justify-content: space-between;   
-    flex-wrap: wrap; 
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #fe-1 {
@@ -492,7 +497,8 @@ footer{
     width: 50%;
 }
 
-#fe-2 h2, #fe-2 input[type=submit] {
+#fe-2 h2,
+#fe-2 input[type=submit] {
     justify-content: center;
     text-align: center;
 }
@@ -522,11 +528,12 @@ textarea {
         font-size: 2em;
         text-align: center;
     }
+
     .container {
         max-width: 100%;
     }
 
-    
+
 }
 
 @media screen and (min-width: 992px) {
@@ -552,12 +559,13 @@ textarea {
         text-align: center;
     }
 }
-@media screen and (max-width: 992px){
-    .container {
-        max-width: 100%;
-    }
 
-    .checker-item{
+@media screen and (max-width: 992px) {
+    /* .container {
+        max-width: 100%;
+    } */
+
+    .checker-item {
         width: 100%;
     }
 }
@@ -586,7 +594,7 @@ textarea {
         max-width: 100%;
     }
 
-    .checker-item{
+    .checker-item {
         width: 100%;
     }
 }
