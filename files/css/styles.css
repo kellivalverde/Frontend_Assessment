@@ -210,7 +210,9 @@ header.masthead h1 p button {
 }
 
 #main-blq blockquote {
-    padding: 1em 20%;
+    padding: 1em 15%;
+    font-size: 1.25em;
+    line-height: 1.25em;
 }
 
 /* Buttons */
@@ -269,7 +271,8 @@ button.btn-white {
 
 .caption {
     text-align: center;
-    /* font-size: 0.75em; */
+    padding: 0 4px;
+    line-height: 0.75em;
 }
 
 .col-2 {
@@ -323,10 +326,17 @@ button.btn-white {
 }
 
 #main-text {
-    padding: 0 50px 1.5em 50px;
+    padding: 0 7% 1.5em;
 
 }
+.article-text {
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
 
+#lion {
+    margin-left: 3em;
+}
 .text-wrap {
     float: right;
     width: 100%;
