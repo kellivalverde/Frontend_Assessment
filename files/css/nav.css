@@ -113,7 +113,24 @@
 }
 
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/*  MEDIA RULES */
+
+/* When the width is between 600px and 900px OR above 1100px */
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+    .topnav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .search {
+        float: left;
+    }
+
+}
+
+
+  /* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
   @media only screen and (max-width: 600px) {
     .topnav a, .dropdown .dropbtn {
       display: none;
@@ -149,11 +166,7 @@
     }
 
   }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media only screen and (max-width: 600px) {
-    
-  }
+ 
 
 
 
