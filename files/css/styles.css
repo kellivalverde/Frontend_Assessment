@@ -63,7 +63,6 @@ h3 {
 .page-top-links {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: right;
     float: right;
     margin: 5px;
@@ -102,10 +101,10 @@ hr.light {
 header {
     text-align: center;
     width: 100%;
-    height: 30rem;
-    padding-top: 4.5em;
-    padding-bottom: 4.5em;
-    
+    height: 40rem;
+    padding-top: 5em;
+    padding-bottom: 5em;
+
 }
 
 .header,
@@ -120,11 +119,12 @@ header.masthead {
     background-position: 50% 50%;
     background-color: white;
     color: white;
-    
     box-sizing: border-box;
-    
 }
 
+.masthead-content{
+    height: 25rem;
+}
 header.masthead h1 p button {
     font-size: 2em;
     text-align: center;
@@ -230,6 +230,7 @@ button.btn-white {
 
 .checker-item {
     width: 50%;
+    height: 450px;
 }
 
 .checker-item img {
@@ -237,14 +238,19 @@ button.btn-white {
     max-height: 100%;
 }
 
-.checker-item h3 {
-    text-align: center;
+.checker-item p {
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
 }
 
 .checker-content {
-    padding: 15% 7%;
-    justify-content: center;
-    display: inline inline-block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    height: 100%;
 }
 
 .inset-image-right {
@@ -255,9 +261,9 @@ button.btn-white {
     float: left;
 }
 
-.h-450 {
+/* .h-450 {
     height: 450px;
-}
+} */
 
 #main-text {
     padding: 0 7% 1.5em;
@@ -483,14 +489,15 @@ textarea {
 } */
 
 /* When the width is between 600px and 900px OR above 1100px */
-@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+@media screen and (max-width: 900px) and (min-width: 600px),
+(min-width: 1100px) {
     header.masthead {
         width: 100%;
         /* height: 40rem; */
         padding-top: 4.5em;
         padding-bottom: 4.5em;
     }
-    
+
     header.masthead h1 {
         font-size: 2em;
         text-align: center;
@@ -502,12 +509,12 @@ textarea {
 
 }
 
-}
+
 @media only screen and (min-width: 992px) {
     header.masthead {
         height: auto;
         padding-top: 4.5em;
-        padding-bottom: 0;
+        padding-bottom: 4.5em;
     }
 
     header.masthead p {

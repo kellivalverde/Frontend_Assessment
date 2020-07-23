@@ -112,11 +112,16 @@
     font-size: 1em;
 }
 
+.search {
+    float: right;
+}
+
 
 /*  MEDIA RULES */
 
 /* When the width is between 600px and 900px OR above 1100px */
-@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+@media screen and (max-width: 900px) and (min-width: 600px) {
+        
     .topnav {
         display: flex;
         flex-wrap: wrap;
