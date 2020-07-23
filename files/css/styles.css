@@ -283,8 +283,9 @@ button.btn-white {
 
 .caption {
     text-align: center;
-    padding: 0 4px;
+    padding: 0 5px;
     line-height: 0.75em;
+    font-size: 1em;
 }
 
 .col-2 {
@@ -324,10 +325,10 @@ button.btn-white {
     float: left;
 }
 
-.dark-border {
+/* .dark-border {
     border: 2px solid black;
     width: 100%;
-}
+} */
 
 /* .h-400 img {
     height: 400px;
@@ -347,20 +348,17 @@ button.btn-white {
     line-height: 1.25em;
 }
 
-#lion {
+#figure {
     margin-left: 3em;
     width: 320px;
+    border: 2px solid black;
 }
 
-#lion img {
-    width: 317px;
+#figure img {
+    width: 100%;
     height: auto;
-
-
-
+    /* max-width: 317px; */
 }
-
-
 
 
 .text-wrap {
@@ -646,4 +644,16 @@ textarea {
         width: 100%;
         text-align: left;
     }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #figure {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
 }
