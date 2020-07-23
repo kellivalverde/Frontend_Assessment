@@ -329,9 +329,9 @@ button.btn-white {
     width: 100%;
 }
 
-.h-400 img {
+/* .h-400 img {
     height: 400px;
-}
+} */
 
 .h-450 {
     height: 450px;
@@ -349,7 +349,19 @@ button.btn-white {
 
 #lion {
     margin-left: 3em;
+    width: 320px;
 }
+
+#lion img {
+    width: 317px;
+    height: auto;
+
+
+
+}
+
+
+
 
 .text-wrap {
     float: right;
