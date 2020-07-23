@@ -16,6 +16,8 @@
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
     <!--styles-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/nav.css" rel="stylesheet" />
+
     <link href="css/modal.css" rel="stylesheet" />
 
 </head>
@@ -31,12 +33,13 @@
             </div>
         </div>
 
-        <nav class="navbar" id="myNavBar">
-            <a class="navbar" href="#main-blq">Menu 1</a>
-            <a class="navbar"href="#checkers">Menu 2</a>
+
+        <nav class="topnav" id="myTopnav">
+            <a class="topnav" href="#main-blq">Menu 1</a>
+            <a class="topnav" href="#checkers">Menu 2</a>
             <div class="dropdown">
                 <button class="dropbtn">Menu 3
-                    <i class="fas fa-caret-down"></i>
+                    <i class="fas fa-caret-down"></i> <!--carrot-->
                 </button>
                 <div class="dropdown-content">
                     <a href="#">Item A</a>
@@ -44,41 +47,48 @@
                     <a href="#">Item C</a>
                 </div>
             </div>
-            <a class="navbar" href="#team">Menu 4</a>
-            <a class="navbar" href="#cta">Menu 5</a>
-            <a class="navbar" href="#contact">Menu 6</a>
-            <a class="navbar" href="#menu7">Menu 7</a>
-            <a class="navbar" href="#menu8">Menu 8</a>
-            
-            <div class="navbar">
+            <a class="topnav" href="#team">Menu 4</a>
+            <a class="topnav" href="#cta">Menu 5</a>
+            <a class="topnav" href="#contact">Menu 6</a>
+            <a class="topnav" href="#menu7">Menu 7</a>
+            <a class="topnav" href="#menu8">Menu 8</a>
+
+            <div class="topnav search">
                 <input type="text" placeholder="Search...">
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myNavBarFunction()">&#9776;</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!--hamburger-->
         </nav>
 
         <!--Masthead-->
         <header class="masthead">
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <hr class="divider light" />
-            <p>Lorem ipsum dolor sit amet</p>
-            <button id="myBtn" type="button" class="btn-white">Lorem ipsum</button>
+            <div>
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <hr class="divider light" />
+                <p>Lorem ipsum dolor sit amet</p>
+                <button id="myBtn" type="button" class="btn-white">Lorem ipsum</button>
 
-            <!-- Modal -->
-            <div id="myModal" class="modal">
+                <!-- Modal -->
+                <div id="myModal" class="modal">
 
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close"><i class="fas fa-times"></i></span>
-                        <h2>Hey, look! A modal</h2>
-                    </div>
-                    <div class="modal-body">
-                        <img src="img/raoul-droog-yMSecCHsIBc-unsplash.jpg" alt="cool cat in sunglasses" title="Mee-yow! Check out this cool cat.">
-                        <p>Photo by <a href="https://unsplash.com/@raouldroog?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Raoul Droog</a> on <a href="https://unsplash.com/s/photos/cat-in-sunglasses?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close"><i class="fas fa-times"></i></span>
+                            <h2>Hey, look! A modal</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/raoul-droog-yMSecCHsIBc-unsplash.jpg" alt="cool cat in sunglasses"
+                                title="Mee-yow! Check out this cool cat.">
+                            <p>Photo by <a
+                                    href="https://unsplash.com/@raouldroog?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Raoul
+                                    Droog</a> on <a
+                                    href="https://unsplash.com/s/photos/cat-in-sunglasses?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
         </header>
 
@@ -94,9 +104,11 @@
             <!--paragraphs with lion image-->
             <div id="main-text">
                 <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                    viverra maecenas
                     accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                 <div id="figure" class="inset-image-right dark-border">
@@ -107,18 +119,22 @@
                 </div>
 
                 <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore etdolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                    incididunt ut labore etdolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                    viverra maecenas
                     accumsanlacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
                     elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
 
                 <h2 class="accent-color">Header</h2>
 
                 <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                    viverra maecenas
                     accumsanlacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.
@@ -134,13 +150,15 @@
                     alt="photo of a town square with lanterns">
             </div>
             <div class="checker-item checker-content">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et lacus vel facilisis.</h3>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et lacus vel facilisis.</h3>
                 <hr class="divider accent-color" />
             </div>
 
 
             <div class="checker-item checker-content">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et lacus vel facilisis.</h3>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et lacus vel facilisis.</h3>
                 <hr class="divider accent-color" />
             </div>
             <div class="checker-item">
@@ -236,7 +254,7 @@
         </div>
     </footer>
 
-    
+
 </body>
 <script src="js/nav.js"></script>
 <script src="js/modal.js"></script>
