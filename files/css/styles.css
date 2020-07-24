@@ -460,6 +460,7 @@ textarea {
     margin: 0 auto;
     display: block;
 }
+
 textarea {
     font-family: "Helvetica Neue", sans-serif;
 }
@@ -482,13 +483,6 @@ textarea {
         max-width: 100%;
     }
 
-    .page-top-links {
-        margin-top: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        float: none;
-    }
 }
 
 
@@ -535,6 +529,14 @@ textarea {
         flex: 50%;
     }
 
+    .page-top-links {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: none;
+    }
+
 }
 
 
@@ -560,13 +562,8 @@ textarea {
         margin: auto;
     }
 
-    .page-top-links {
-        margin: 25px auto;
-    }
-
-    .page-top-btn {
+    button.btn-blue {
         width: 80px;
-        margin-bottom: 5px;
     }
 
 }
