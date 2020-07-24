@@ -120,7 +120,7 @@
 /*  MEDIA RULES */
 
 /* When the width is between 600px and 900px OR above 1100px */
-@media screen and (max-width: 900px) and (min-width: 600px) {
+@media screen and (max-width: 900px) and (min-width: 601px) {
         
     .topnav {
         display: flex;
