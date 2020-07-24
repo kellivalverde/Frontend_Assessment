@@ -457,6 +457,11 @@ textarea {
     resize: vertical
 }
 
+#submit-button {
+    margin:0 auto;
+    display: block;
+}
+
 
 /*  MEDIA RULES */
 
@@ -520,6 +525,11 @@ textarea {
 
 /* Lion gets weird above 600px */
 @media only screen and (max-width: 600px) {
+
+    .container {
+        width: 100%;
+    }
+
     #figure {
         display: block;
         margin-left: auto;
@@ -540,7 +550,7 @@ textarea {
     }
 
     .page-top-btn {
-        width: 100px;
+        width: 80px;
         margin-bottom: 5px;
     }
 
