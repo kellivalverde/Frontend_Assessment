@@ -218,7 +218,7 @@ button.btn-white {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 3em;
+    padding-top: 1em;
 }
 
 .checker-container,
