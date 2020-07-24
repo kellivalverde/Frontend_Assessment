@@ -91,6 +91,7 @@ hr.light {
 
 
 /*  Header & Masthead image  */
+
 header {
     text-align: center;
     width: 100%;
@@ -130,6 +131,7 @@ header.masthead h1 p button {
 
 
 /* Main Body */
+
 .accent-color {
     color: var(--accent-color);
 }
@@ -364,12 +366,9 @@ section {
     align-items: space-between;
     flex-direction: row;
     width: 100%;
-    /* box-sizing: none; */
 }
 
 .cta-block {
-    /* display: flex;
-    flex-wrap: wrap; */
     background-color: var(--blue);
     width: 25%;
     height: auto;
@@ -458,7 +457,7 @@ textarea {
 }
 
 #submit-button {
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
 }
 
