@@ -520,6 +520,10 @@ textarea {
         width: 100%;
     }
 
+    .checker-content {
+        margin: 2em auto;
+    }
+
     .cta-block {
         width: 50%;
     }
@@ -530,8 +534,6 @@ textarea {
     .footer-element {
         flex: 50%;
     }
-
-
 
 }
 
