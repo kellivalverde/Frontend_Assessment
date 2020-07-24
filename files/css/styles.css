@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Eventually would break this into more modular stylesheets instead of this one monster file. */
 
 :root {
     --light-blue: #58a4f9;
@@ -10,14 +9,8 @@
     --light-orange: #f97615;
     --dark-orange: #f65720;
     --gray: #d4d4d4;
-    /* Ideally, this could be set up as a theme so var colors could be changed globally*/
 }
 
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box;
-} */
 
 html {
     font-family: "Helvetica Neue", sans-serif;
@@ -101,7 +94,6 @@ hr.light {
 header {
     text-align: center;
     width: 100%;
-    /* height: 40rem; */
     padding-top: 5em;
     padding-bottom: 5em;
 
@@ -126,9 +118,11 @@ header.masthead {
 }
 
 
-.masthead-content{
+.masthead-content {
     height: 25rem;
+    padding-top: 2em;
 }
+
 header.masthead h1 p button {
     font-size: 2em;
     text-align: center;
@@ -136,7 +130,6 @@ header.masthead h1 p button {
 
 
 /* Main Body */
-
 .accent-color {
     color: var(--accent-color);
 }
@@ -154,7 +147,6 @@ header.masthead h1 p button {
 }
 
 /* Buttons */
-
 button {
     text-align: center;
     text-decoration: none;
@@ -265,9 +257,6 @@ button.btn-white {
     float: left;
 }
 
-/* .h-450 {
-    height: 450px;
-} */
 
 #main-text {
     padding: 0 7% 1.5em;
@@ -288,7 +277,6 @@ button.btn-white {
 #figure img {
     width: 100%;
     height: auto;
-    /* max-width: 317px; */
 }
 
 
@@ -472,7 +460,7 @@ textarea {
 
 /*  MEDIA RULES */
 
-/* When the width is between 600px and 900px OR above 1100px */
+/* between 601px and 992px */
 @media screen and (max-width: 992px) and (min-width: 601px) {
     header.masthead {
         width: 100%;
@@ -494,8 +482,6 @@ textarea {
         justify-content: center;
         float: none;
     }
-
-
 }
 
 
@@ -517,7 +503,7 @@ textarea {
     }
 }
 
-/* smaller than 992 */
+/* smaller than 992px */
 @media only screen and (max-width: 992px) {
     .container {
         max-width: 100%;
@@ -532,7 +518,7 @@ textarea {
     }
 }
 
-/* Lion */
+/* Lion gets weird above 600px */
 @media only screen and (max-width: 600px) {
     #figure {
         display: block;
@@ -542,5 +528,20 @@ textarea {
         width: 100%;
     }
 
+
+    .masthead-content h1 {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .page-top-links {
+        margin: 25px auto;
+    }
+
+    .page-top-btn {
+        width: 100px;
+        margin-bottom: 5px;
+    }
 
 }
